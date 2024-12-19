@@ -1,0 +1,28 @@
+{
+    "name": "Pause Tube",
+    "description": "Extension which pauses youtube video when tab is switched",
+    "version": "1.0",
+    "manifest_version": 3,
+    "permissions": [
+        "scripting",
+        "tabs"
+    ],
+    "icons": {
+        "16": "images/muted.png",
+        "32": "images/muted.png",
+        "48": "images/muted.png"
+    },
+    "action": {
+        "default_icon": {
+            "16": "images/muted.png",
+            "32": "images/muted.png",
+            "48": "images/muted.png"
+        }
+    },
+    "background": {
+        "service_worker": "scripts/background.js"
+    },
+    "host_permissions": [
+        "https://www.youtube.com/watch?*"
+    ]
+}
